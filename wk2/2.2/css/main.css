@@ -1,0 +1,20 @@
+/***
+* Main CSS for Exercise 2.1
+* Developed By: Tyler Mann
+***/
+
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.65;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 50px;
+    text-align: center;
+    color:navy;
+}
