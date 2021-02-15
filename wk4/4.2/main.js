@@ -27,8 +27,10 @@ function draw () {
 console.log(mousePressed);
 function mousePressed () {
   if ((mouseX >= rectX && mouseX <= rectX + rectWidth) && (mouseY >= rectY && mouseY <= rectY + rectHeight)) { 
+    
     clickCount++;
     console.log('hit', clickCount);
+    
   }
 
 
@@ -36,5 +38,5 @@ function mousePressed () {
 function drawShape () {
   fill('orange');
   stroke('red');
-  rect(rectX, rectY, rectWidth, rectHeight);
+  rect(rectX, rectY, rectWidth, rectHeight); 
 }
