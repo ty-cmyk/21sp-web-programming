@@ -1,5 +1,5 @@
 /***
-* Main CSS for Exercise 4.2
+* Main CSS for Exercise 4.a
 * Developed By: Tyler Mann
 ***/
 
@@ -11,11 +11,13 @@ body {
     font-size: 15px;
     font-weight: 300;
     text-align: center;
+    
 }
 
 h1 {
-    font-weight: 700;
+    font-weight: 900;
     font-size: 40px;
     text-align: center;
-    color: orange;
+    color: #508BBF;
+    text-transform: uppercase;
 }
