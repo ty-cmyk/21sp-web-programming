@@ -1,18 +1,18 @@
 const rectW = 150;
 const rectH = 200;
 const roundCorners = 10;
-let firstRowX = 125;
+let firstRowX = 100;
 let firstRowY = 100;
-let secRowX = 125;
+let secRowX = 100;
 let secRowY = 350;
-let thirdRowX = 125;
+let thirdRowX = 100;
 let thirdRowY = 600;
 let myCards = [];
 
 function setup () {
-  createCanvas(1200, 900);
+  createCanvas(1350, 900);
   background(0);
-  for(let i = 0; i < 5; i++) {
+  for(let i = 0; i < 6; i++) {
   //First Row 
     rect(firstRowX, firstRowY, rectW, rectH, roundCorners);
       myCards.push({ x: firstRowX, y: firstRowY, id: i});
