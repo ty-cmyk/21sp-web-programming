@@ -53,12 +53,12 @@ function setup() {
 
 
 function draw () {
-    background('lightBlue');
+    background('#FFEBD7');
 
     if (gameState.numMatched === gameState.totalPairs) {
-        fill('yellow');
+        fill('orange');
         textSize(66);
-        text('You win!', 400, 425);
+        text('You win!', 400, 50);
         noLoop();
     }
 
@@ -74,8 +74,9 @@ function draw () {
   noLoop();
   gameState.flippedCards.length = 0;
   gameState.waiting = false;
-  fill('#fff');
-  textSize(25);
+  fill('#382618');
+  textSize(20);
+  textStyle(BOLD);
   text('ATTEMPTS: ' + gameState.attempts, 100, 900);
   text('MATCHES:  ' + gameState.numMatched, 400, 900)
 }
