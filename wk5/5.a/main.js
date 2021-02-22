@@ -57,8 +57,8 @@ function draw () {
 
     if (gameState.numMatched === gameState.totalPairs) {
         fill('orange');
-        textSize(66);
-        text('You win!', 400, 50);
+        textSize(60);
+        text('You win!', 100, 75);
         noLoop();
     }
 
