@@ -14,18 +14,21 @@ var llamaFacts = new Vue({
     
   },
   methods: {
+      //   saves facts to list
       saveItem: function() {
           this.facts.push(this.newFact);
           this.newFact = '';
-      },
+      }, 
+    //  changes visibility of input field
       changeState: function(newState) {
           this.state = newState;
           this.newFact = '';
       },
+      //   deletes facts from list
       deleteItem: function() {
           this.facts.pop(this.newFact);
           this.newFact = '';
       }
-
+    
   }
 });
