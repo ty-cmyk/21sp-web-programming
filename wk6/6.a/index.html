@@ -24,10 +24,11 @@
         <ul>
           <li v-for="facts in facts">{{ facts }}</li>
         </ul>
+        <p v-if="facts.length === 0"> Add some facts!</p>
         <!-- Add Button -->
         <button class="btn btn-add" @click="changeState('edit')">Add Facts</button>
 
-        <p v-if="facts.length === 0"> Add some facts!</p>
+        
         
         <div v-if="state === 'edit'" class="add-item-form">
             
