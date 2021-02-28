@@ -36,13 +36,13 @@
             <input v-model="newFact" type="text" placeholder="Llama's are awesome..." @keyup.enter="saveItem">
             
             <!-- Submit and Cancel Buttons -->
-            <p class="btn-align">
+            <div class="btn-align">
             <button class="btn btn-cancel" @click="changeState('default')">Cancel</button> 
-            <button class="btn btn-submit" :disable="newFact.length === 0" @click="saveItem">Add Fact</button> <!-- disables the ability to add a new fact when there is now character count -->
+            <button class="btn btn-submit" :disable="newFact.length === 0" @click="saveItem"><i class="fas fa-plus-circle"></i> Add Fact</button> <!-- disables the ability to add a new fact when there is now character count -->
             <!-- : = v-bind manipulates an element’s class list and its inline styles.-->
             <!-- @ = v-on attaches an event listener to the element.-->
-            </p>
-            <button class="btn btn-delete" @click="deleteItem">Delete</button> 
+            </div>
+            <button class="btn btn-delete" @click="deleteItem"><i class="fas fa-minus-circle"></i></i> Delete Fact</button> 
         </div>
     </div>
     
@@ -53,6 +53,7 @@
     <script src="main.js">
     </script>
 
+    <script src="https://kit.fontawesome.com/93e278cd22.js" crossorigin="anonymous"></script
     
 </body>
 </html>
