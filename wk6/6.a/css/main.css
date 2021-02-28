@@ -1,0 +1,82 @@
+/***
+* Main CSS for Exercise 6.a
+* Developed By: Tyler Mann
+***/
+
+
+body {
+    margin: auto;
+    max-width: 600px;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.65;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    
+}
+
+h1 {
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 35px;
+    text-align: center;
+    color: #50bf82;
+    text-transform: uppercase;
+}
+
+li {
+    padding: 8px;
+}
+input {
+    width: 600px;
+    padding: 8px;
+    margin-top: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #50bf82;
+    border-radius: 8px;
+    border: solid #50bf82 2px;
+}
+
+::placeholder {
+    color: #d4d4d4;
+}
+
+.btn-align {
+    text-align: right;
+}
+
+.btn {
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin: 30px 10px 30px 10px;
+    font-family: 'Source Sans Pro', sans-serif;    
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.btn-add {
+    background-color: white;
+    border: solid #50bf82 2px;
+    color: #50bf82;
+}
+.btn-submit {
+    background-color: #50bf82;
+    color: white;
+}
+.btn-cancel {
+    background-color: #b1b1b1;
+    color: white;
+
+}
+
+.btn-delete {
+    padding: 8px;
+    font-size: 13px;
+    background-color: #f77b7b;
+    color: white;
+
+}

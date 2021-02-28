@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Llama Facts</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    
+    
+
+</head>
+<body>
+    <div id="llamaFacts">
+        <!-- Header -->
+        <div class="header">
+         <h1>{{ header.toLocaleUpperCase() }}</h1>
+         
+        </div>
+        <!-- Facts -->
+        <ul>
+          <li v-for="facts in facts">{{ facts }}</li>
+        </ul>
+        <!-- Add Button -->
+        <button class="btn btn-add" @click="changeState('edit')">Add Facts</button>
+
+        <p v-if="facts.length === 0"> Add some facts!</p>
+        
+        <div v-if="state === 'edit'" class="add-item-form">
+            
+            <!-- Fact Input Field -->
+            <input v-model="newFact" type="text" placeholder="Llama's are awesome..." @keyup.enter="saveItem">
+            
+            <!-- Submit and Cancel Buttons -->
+            <p class="btn-align">
+            <button class="btn btn-cancel" @click="changeState('default')">Cancel</button> 
+            <button class="btn btn-submit" :disable="newFact.length === 0" @click="saveItem">Add Fact</button> <!-- disables the ability to add a new fact when there is now character count -->
+            <!-- : = v-bind manipulates an element’s class list and its inline styles.-->
+            <!-- @ = v-on attaches an event listener to the element.-->
+            </p>
+            <button class="btn btn-delete" @click="deleteItem">Delete</button> 
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    
+    <script src="main.js">
+    </script>
+
+    
+</body>
+</html>
