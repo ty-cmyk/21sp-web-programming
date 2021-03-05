@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Llama Facts</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    
+    
+
+</head>
+<body>
+    <div id="llamaAlpaca" v-cloak>
+        <!-- Header -->
+        <div class="header">
+         <h1>{{ header.toLocaleUpperCase() }}</h1>
+         
+        </div>
+        <div class="facts">
+            <div class="llamaFacts">
+                <!-- Llama Facts -->
+                <h2>{{ llamaHeader.toLocaleUpperCase() }}</h2>
+
+                <ul>
+                    <li v-for="llamaFacts in llamaFacts">{{ llamaFacts }}</li>
+                </ul>
+                <p v-if="llamaFacts.length === 0"> Add some facts!</p>
+
+                <div v-if="state === 'edit'" class="add-item-form">
+                    <button class="btn btn-delete" @click="deleteLlItem"><i class="fas fa-minus-circle"></i> Delete Fact</button> 
+                </div>
+
+                <a class="wikiLink" :title="llamaTitle" :href="llamaWiki">Learn more about llamas</a>
+
+                <!-- Add Button -->
+                <button class="btn btn-add" @click="changeState('edit')">Add Facts</button>
+
+                <div v-if="state === 'edit'" class="add-item-form">
+            
+                    <!-- Fact Input Field -->
+                    <input v-model="newLlamaFact" type="text" placeholder="Llama's are awesome..." @keyup.enter="saveLlItem">
+                    
+                    <!-- Submit and Cancel Buttons -->
+                    <div class="btn-align-right">
+                        <button class="btn btn-cancel" @click="changeState('default')">Cancel</button> 
+                        <button class="btn btn-submit" :disable="newLlamaFact.length === 0" @click="saveLlItem"><i class="fas fa-plus-circle"></i> Add Fact</button>
+                        <!-- disables the ability to add a new fact when there is no character count -->
+                        <!-- : = v-bind manipulates an element’s class list and its inline styles.-->
+                        <!-- @ = v-on attaches an event listener to the element.-->
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="alpacaFacts">
+            <!-- Alpaca Facts -->
+                <h2>{{ alpacaHeader.toLocaleUpperCase() }}</h2>
+
+                <ul>
+                    <li v-for="alpacaFacts in alpacaFacts">{{ alpacaFacts }}</li>
+                </ul>
+                <p v-if="alpacaFacts.length === 0"> Add some facts!</p>
+
+                <div v-if="state === 'edit'" class="add-item-form">
+                    <button class="btn btn-delete" @click="deleteAlItem"><i class="fas fa-minus-circle"></i> Delete Fact</button> 
+                </div>
+                
+                <a class="wikiLink" :title="alpacaTitle" :href="alpacaWiki">Learn more about Alpacas</a>
+
+                <!-- Add Button -->
+                <button class="btn btn-add" @click="changeState('edit')">Add Facts</button>
+                
+                <div v-if="state === 'edit'" class="add-item-form">
+                    
+                    <!-- Fact Input Field -->
+                    <input v-model="newAlpacaFact" type="text" placeholder="Alpacas' are awesome..." @keyup.enter="saveAlItem">
+                    
+                    <!-- Submit and Cancel Buttons -->
+                    <div class="btn-align-right">
+                    <button class="btn btn-cancel" @click="changeState('default')">Cancel</button> 
+                    <button class="btn btn-submit" :disable="newAlpacaFact.length === 0" @click="saveAlItem"><i class="fas fa-plus-circle"></i> Add Fact</button> <!-- disables the ability to add a new fact when there is no character count -->
+                    <!-- : = v-bind manipulates an element’s class list and its inline styles.-->
+                    <!-- @ = v-on attaches an event listener to the element.-->  
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+</div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    
+    <script src="main.js">
+    </script>
+
+    <script src="https://kit.fontawesome.com/93e278cd22.js" crossorigin="anonymous"></script
+    
+</body>
+</html>
