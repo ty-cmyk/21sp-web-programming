@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>My Bookshelf</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    
+    
+
+</head>
+<body>
+    
+         <h1>My Bookshelf</h1>
+         <div id="myBookshelf">
+            <div>
+                <p class="note">* Outlined entries are the most recent releases.</p>
+                <table>
+                    <thead>
+                        <th class="thead-center">Date</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Publisher</th>
+                        <th>Summary</th>
+                        <th class="thead-center">Cover</th>
+                    </thead>
+                    <tbody>
+                        <tr 
+                            v-for="(book, idx) in books"
+                            :class="{even: idx % 2, year: book.date === '2020'}"
+                            >
+                            <td class="date">{{book.date}}</td>
+                            <td class="title"><a class="link" target="_blank" :href="book.link">{{book.title}}</a></td>
+                            <td class="author">{{book.author}}</td>
+                            <td class="publisher">{{book.publisher}}</td>
+                            <td class="summary">{{book.summary}}</td>
+                            <td><img :src="book.image" :alt="book.title + book.author" width="150px"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+         </div>
+         
+       
+    
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    
+    <script src="main.js"></script>
+
+    <script src="https://kit.fontawesome.com/93e278cd22.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>

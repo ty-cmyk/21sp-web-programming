@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="css/test.css">
+    
+  </head>
+
+  <body>
+    <div id="llama-list">
+      <h1 class="llama-list-title">What to name your next llama</h1>
+      <div class="list-container">
+        <div class="list-head">
+          <table> 
+            <thead>
+              <th><span class="rank">Rank</span></th>
+              <th><span class="name">Name</span></th>
+            </thead>
+            <tbody> 
+              <tr v-for="item in llamaArray"> 
+                <td>{{item.rank}}</td>
+                <td>{{item.name}}</td>
+
+
+              </tr>
+            </tbody>
+          
+          
+        </div>
+        
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="loop-script.js"></script>
+  </body>
+</html>
