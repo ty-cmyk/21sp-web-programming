@@ -1,5 +1,5 @@
 /***
-* Main CSS for Exercise 7.1
+* Main CSS for Exercise 7.a
 * Developed By: Tyler Mann
 ***/
 
@@ -37,6 +37,7 @@ h1 {
     color: #fff;
 }
 
+/* Links */
 a.link {
     display: block;
     padding-left: 20px;
@@ -50,7 +51,19 @@ a.link {
 a:hover {
     color:#1f7272;
 }
-table {
+
+  
+  /* Conditional Styles */
+  .even {
+    background-color: #f1e3d9;
+  }
+
+  .year {
+      border: solid 6px #7be6e6;
+  }
+
+  /* Table Styles */
+  table {
     border-collapse: collapse;
     border: solid 6px #a0531f;
     margin: 20px;
@@ -68,14 +81,6 @@ thead {
   }
   td { 
     padding: 20px;
-    /* border: #c4e9d4 1px solid; */
-  }
-  
-  .even {
-    background-color: #f1e3d9;
-  }
-  .year {
-      border: solid 6px #7be6e6;
   }
   .title {
     width: 300px;
