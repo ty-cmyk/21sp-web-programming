@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Calculator</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    
+    
+
+</head>
+<body>
+    
+         <h1>Calculator</h1>
+         <div id="calcApp" v-cloak>
+            <form action="">
+                <div>
+                    <!-- input first number -->
+                    <input v-model.number="firstNum" type="number" name="" id="" placeholder="first number">
+                    <!-- END input first number -->
+
+                    <!-- select operation -->
+                    <select v-model="operation">
+                        <option value="add">+</option>
+                        <option value="subtract">-</option>
+                        <option value="multiply">&times;</option>
+                        <option value="divide">&divide;</option>
+                    </select>
+                    <!-- END select operation -->
+
+                    <!-- input second number -->
+                    <input v-model.number="secondNum" type="number" placeholder="second number">
+                    <!-- END input second number -->
+                    
+                    <!-- calculate button -->
+                    <button class="btn" @click="calculate(firstNum, secondNum)" type="button"> Calculate</button>
+                    <!-- END calculate button -->
+                </div>
+                <!-- total -->
+                <div>
+                   <p>Total: <strong>&nbsp;{{ total }}</strong></p> 
+                </div>
+                <!-- END total -->
+            </form>
+            
+         </div>
+         
+       
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    
+    <script src="main.js"></script>
+
+    <script src="https://kit.fontawesome.com/93e278cd22.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
