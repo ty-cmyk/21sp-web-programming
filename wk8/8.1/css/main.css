@@ -1,0 +1,101 @@
+/***
+* Main CSS for Exercise 8.1
+* Developed By: Tyler Mann
+***/
+
+
+[v-cloak] {
+    display: none;
+}
+
+body {
+    margin: auto;
+    max-width: 1200px;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.65;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    background-color: #323a49;
+}
+
+h1 {
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 35px;
+    text-align: center;
+    color: #b1632f;
+    text-transform: uppercase;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  color: #b1632f;
+  font-weight: 700;
+
+}
+
+div {
+  margin: 10px 0;
+  display: flex;
+  color: aliceblue;
+  font-weight: 500;
+  padding: 5px;
+}
+
+div.alpaca-status, 
+div.alpaca-color, 
+div.output {
+  flex-direction: column;
+  
+}
+
+div label {
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+div input, div select {
+  flex-grow: 1;
+  
+}
+
+input, select, textarea {
+  color: #b1632f;
+  font-weight: 700;
+  padding: 5px;
+  border-radius: 5px;
+  border: solid 1px aliceblue;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+li {
+  margin: 5px 0px;
+}
+
+.input[type="checkbox"] {
+  margin-right: 10px;
+  width: 13px;
+  height:13px;
+}
+.section-title {
+  padding: 10px 0 0;
+  margin: 0;
+  font-weight: 600;
+}
+.status {
+  padding: 5px 0;
+  font-weight: 600;
+  text-transform: none;
+  font-size: 16px;
+}

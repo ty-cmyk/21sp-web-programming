@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Alpaca Fan Club</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    
+    
+
+</head>
+<body>
+    
+         <h1>Alpaca Fan Club</h1>
+         <div id="alpacaForm" v-cloak>
+            <form>
+                <fieldset>
+                    <legend> Fan Club </legend>
+                    
+                    <!-- First Name Field -->
+                    <div>
+                        <label for="firstName">Firts Name</label>
+                        <input id="firstName" 
+                        v-model="firstName">
+                    </div>
+                    <!-- END First Name Field -->
+
+                    <!-- Last Name Field -->
+                    <div>
+                        <label for="lastName">Last Name</label>
+                        <input id="lastName" 
+                        v-model="lastName">
+                    </div>
+                    <!-- END Last Name Field -->
+
+                    <!-- Street Address Field -->
+                    <div>
+                        <label>Street Address</label>
+                        <input id="street" 
+                        v-model="street">
+                    </div>
+                    <!-- END Street Address Field -->
+
+                    <!-- State Field -->
+                    <div>
+                        <label>State</label>
+                        <select name="state" id="state" v-model="state">
+                            <option v-for="state in availableStates" :value="state.value">
+                                {{state.name}}
+                            </option>
+
+                        </select>
+                    </div>
+                    <!-- END State Field -->
+
+                    <!-- Zipcode Field -->
+                    <div>
+                        <label>Zipcode</label>
+                        <input id="zip" 
+                        v-model="zip">
+                    </div>
+                    <!-- END Zipcode Field -->
+
+                    <!-- Alpaca Color Checks -->
+                    <div class="alpaca-color">
+                        <p class="section-title">Favorite Alpaca Colors</p>
+                        <div>
+                            <ul>
+                                <li v-for="color in colors">
+                                    <label :for="color.value">
+                                        <input class="input" type="checkbox" v-model="selectedColors" name="" :id="color.value" :value="color.value">
+                                        {{color.name}}
+                                    </label>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <!-- END Alpaca Color Checks -->
+
+                    <!--Alpaca Status -->
+                    <div class="alpaca-status">
+                        <label class="status" :for="status">Alpaca Status</label>
+                        <textarea name="" id="status" cols="30" rows="10"
+                        v-model="status"></textarea>
+                    </div>
+                    <!-- END Alpaca Status -->
+                </fieldset>
+
+                <!-- OUTPUT -->
+                <div class="output">
+                    <h3>Output</h3>
+                    First Name: {{firstName}} <br>
+                    Last Name: {{lastName}} <br>
+                    Street: {{street}} <br>
+                    State: {{state}} <br>
+                    Zip: {{zip}} <br>
+                    color: {{selectedColors}} <br>
+                    Status: {{status}} <br>
+                </div>
+                <!-- END OUTPUT -->
+            </form>
+         </div>
+         
+       
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    
+    <script src="main.js"></script>
+
+    <script src="https://kit.fontawesome.com/93e278cd22.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
