@@ -33,7 +33,7 @@
                         <tbody>
                             <tr 
                                 v-for="(book, idx) in books"
-                                :class="{even: idx % 2, year: book.date === '2020'}"
+                                :class="{even: idx % 2, year: book.date >= '2020'}"
                                 >
                                 <td class="date">{{book.date}}</td>
                                 <td class="title"><a class="link" target="_blank" :href="book.link">{{book.title}}</a></td>
