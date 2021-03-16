@@ -19,66 +19,72 @@
          <div id="myBookshelf" v-cloak>
             <div>
                 <p class="note">* Outlined entries are the most recent releases.</p>
-                <table>
-                    <thead>
-                        <th class="thead-center">Year</th>
-                        <th>Title</th>
-                        <th>Author</th>
-                        <th>Publisher</th>
-                        <th>Summary</th>
-                        <th class="thead-center">Cover</th>
-                        <th class="thead-center">Actions</th>
-                    </thead>
-                    <tbody>
-                        <tr 
-                            v-for="(book, idx) in books"
-                            :class="{even: idx % 2, year: book.date === '2020'}"
-                            >
-                            <td class="date">{{book.date}}</td>
-                            <td class="title"><a class="link" target="_blank" :href="book.link">{{book.title}}</a></td>
-                            <td class="author">{{book.author}}</td>
-                            <td class="publisher">{{book.publisher}}</td>
-                            <td class="summary">{{book.summary}}</td>
-                            <td><img :src="book.image" :alt="book.title + book.author" width="150px"/></td>
-                            <td class="actions"> <button class="btn btn-delete" type="button" @click="deleteItem(book)"><i class="fas fa-minus-circle"></i> Delete</button></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-box">
+                    <table>
+                        <thead>
+                            <th class="thead-center">Year</th>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Publisher</th>
+                            <th>Summary</th>
+                            <th class="thead-center">Cover</th>
+                            <th class="thead-center">Actions</th>
+                        </thead>
+                        <tbody>
+                            <tr 
+                                v-for="(book, idx) in books"
+                                :class="{even: idx % 2, year: book.date === '2020'}"
+                                >
+                                <td class="date">{{book.date}}</td>
+                                <td class="title"><a class="link" target="_blank" :href="book.link">{{book.title}}</a></td>
+                                <td class="author">{{book.author}}</td>
+                                <td class="publisher">{{book.publisher}}</td>
+                                <td class="summary">{{book.summary}}</td>
+                                <td><img :src="book.image" :alt="book.title + book.author" width="150px"/></td>
+                                <td class="actions"> <button class="btn btn-delete" type="button" @click="deleteItem(book)"><i class="fas fa-minus-circle"></i> Delete</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 
             </div>
 <form v-on:submit.prevent="submitHandler">
     <fieldset>
         <legend>Add a book to my bookshelf</legend>
-       
-        <div>
-           <label for="date">Year Published</label>
-           <input type="text" v-model="newBookObj.date" placeholder="YYYY">
-        </div>
-        <div>
-            <label for="title">Title</label>
-            <input type="text" v-model="newBookObj.title" placeholder="Title">
-         </div>
-         <div>
-            <label for="link">Link</label>
-            <input type="text" v-model="newBookObj.link" placeholder="https://">
-         </div>
-         <div>
-            <label for="author">Author</label>
-            <input type="text" v-model="newBookObj.author" placeholder="Author">
-         </div>
-         <div>
-            <label for="publisher">Publisher</label>
-            <input type="text" v-model="newBookObj.publisher" placeholder="Publisher">
-         </div>
-         <div>
-            <label for="summary">Summary</label>
-            <textarea v-model="newBookObj.summary" placeholder="This book is about..."></textarea>
-            <!-- <textarea type="text" v-model="newBookObj.summary" placeholder="This book is about..."> -->
-         </div>
-         <div>
-            <label for="image">Image</label>
-            <input type="text" v-model="newBookObj.image" placeholder="https://">
-         </div>
+            <div class="form-box">
+                <div class="column">
+                <label for="date">Year Published</label>
+                <input class="enter-year" type="text" v-model="newBookObj.date" placeholder="YYYY">
+                </div>
+                <div class="column">
+                    <label for="title">Title</label>
+                    <input type="text" v-model="newBookObj.title" placeholder="Title">
+                </div>
+                <div class="column">
+                    <label for="author">Author</label>
+                    <input type="text" v-model="newBookObj.author" placeholder="Author">
+                </div>
+                <div class="column">
+                    <label for="publisher">Publisher</label>
+                    <input type="text" v-model="newBookObj.publisher" placeholder="Publisher">
+                </div>
+            </div>
+            <div class="input-link-box">
+                <div class="column">
+                    <label for="link">Link</label>
+                    <input type="text" v-model="newBookObj.link" placeholder="https://...">
+                </div>
+                
+                <div class="column">
+                    <label for="image">Image</label>
+                    <input type="text" v-model="newBookObj.image" placeholder="https://...">
+                </div>
+            </div>
+            <div class="enter-summary">
+                <label for="summary">Summary</label>
+                <textarea v-model="newBookObj.summary" placeholder="This book is about..."></textarea>
+            </div>
+         
          <div class="btn-box">
              
              <button class="btn btn-add" type="submit"><i class="fas fa-plus-circle"></i> Add Book</button>

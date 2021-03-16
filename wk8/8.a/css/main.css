@@ -1,8 +1,13 @@
 /***
-* Main CSS for Exercise 7.a
+* Main CSS for Exercise 8.a
 * Developed By: Tyler Mann
 ***/
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 
 [v-cloak] {
     display: none;
@@ -53,7 +58,7 @@ a:hover {
 }
 
   
-  /* Conditional Styles */
+/* Conditional Styles */
   .even {
     background-color: #f1e3d9;
   }
@@ -62,11 +67,13 @@ a:hover {
       border: solid 6px #7be6e6;
   }
 
-  /* Table Styles */
+/* Table Styles */
+.table-box {
+  border: solid 10px #a0531f;
+  margin: 20px;
+}
   table {
     border-collapse: collapse;
-    border: solid 6px #a0531f;
-    margin: 20px;
     background-color: #fff;
 }
 thead {
@@ -119,7 +126,8 @@ thead {
   .thead-center {
       text-align: center;
   }
-  
+
+/* Form Styles */
   form div{
     margin: 10px 0;
     display: flex;
@@ -127,39 +135,78 @@ thead {
     font-weight: 500;
     padding: 5px;
   }
-
   form {
     width: 100%;
-    max-width: 400px;
     margin: 20px auto;
     color: #b1632f;
     font-weight: 700;
-  
   }
-
-  div input, div select, div textarea{
+  fieldset {
+    border-radius: 5px;
+    border: solid 5px #a0531f;;
+  }
+  legend {
+    font-size: 20px;
+    padding: 5px;
+    color: aliceblue;
+  }
+  input, textarea{
     flex-grow: 1;
-    
-  }
-
-  input, select, textarea {
     color: #b1632f;
     font-weight: 700;
-    padding: 5px;
+    padding: 15px;
     border-radius: 5px;
     border: solid 1px aliceblue;
+    margin: 0;
   }
   textarea {
-    height: 100px;
+    height: 100px
   }
-
   div label {
     margin-right: 10px;
     text-transform: uppercase;
     font-size: 12px;
-    padding-top: 5px;
+    padding: 5px;
   }
+  ::placeholder {
+    color: #d4d4d4;
+    font-weight: 500;
+  }
+  .form-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .form-box input{
+    width: 300px;
+  }
+  .enter-year {
+    width: 90px !important;
+    text-align: center;
+  }
+  .enter-summary {
+    flex-direction: column;
+  }
+  .enter-summary label {
+    padding-bottom: 5px;
+  }
+  
+  .input-link-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .input-link-box input {
+    width: 550px;
+  }
+  .column {
+    flex-direction: column;
+    margin: 0;
+  }
+  
 
+/* Button Styles */
   .btn {
     border-radius: 10px;
     border: none;
@@ -170,23 +217,16 @@ thead {
     letter-spacing: 1px;
     font-weight: 700;
   }
-
-  ::placeholder {
-    color: #d4d4d4;
-    font-weight: 500;
-}
-
-.btn-add {
-    background-color: white;
-    border: solid #50bf82 2px;
-    color: #50bf82;
-    padding: 8px;
-}
-
-.btn-delete {
-    padding: 8px;
-    font-size: 12px;
-    background-color: #f77b7b;
-    color: white;
-}
-  
+  .btn-add {
+      background-color: white;
+      border: solid #50bf82 2px;
+      color: #50bf82;
+      padding: 8px;
+  }
+  .btn-delete {
+      padding: 8px;
+      font-size: 12px;
+      background-color: #f77b7b;
+      color: white;
+  }
+    
