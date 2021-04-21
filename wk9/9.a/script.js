@@ -1,16 +1,22 @@
+Vue.component('book', {
+  template: `
+          <tr>
+              <td class="date">{{date}}</td>
+              <td class="title"><a class="link" target="_blank" :href="link">{{title}}</a></td>
+              <td class="author">{{author}}</td>
+              <td class="publisher">{{publisher}}</td>
+              <td class="summary">{{summary}}</td>
+              <td><img :src="image" :alt="title + author" width="150px"/></td>
+          </tr>
+  `,
+  props: ['date', 'title', 'link', 'author', 'publisher', 'summary', 'image']
+}) 
+
 
 var myVue = new Vue({
   el: "#myBookshelf",
   data: {
-    newBookObj: {
-        date: '',  
-        title: "",
-        link: "",
-        author: "",
-        publisher: "",
-        summary: "",
-        image: ""
-    },
+
     books: [
       {
         title: "The Photograph as Contemporary Art (World of Art)",
@@ -59,31 +65,11 @@ var myVue = new Vue({
       }, 
     ]
   },
-  methods: { 
-    submitHandler: () => {
-      console.log('submitted');
-      myVue.books = myVue.books.concat(myVue.newBookObj);
-      myVue.resetForm();
-    },
-    resetForm: () => {
-      myVue.newBookObj = {
-        date: '',  
-        title: "",
-        link: "",
-        author: "",
-        publisher: "",
-        summary: "",
-        image: ""
-      };
-    },
-    deleteItem: item => {
-      myVue.books = myVue.books.filter(book => {
-        return book !== item;
-      });
-    },
-    isDisable (title) {
-      return title.length > 0;
+  computed: {
+    numBooks: function () {
+      return this.books.length
     }
-  }
+  },
+
 });
 

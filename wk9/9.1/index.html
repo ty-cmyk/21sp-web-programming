@@ -19,6 +19,7 @@
          <div id="myBookshelf" v-cloak>
             <div>
                 <p class="note">* Outlined entries are the most recent releases.</p>
+                <p class="note">Showing <span class="numShown">{{numBooks}}</span> items</p>
                 <div class="table-box">
                     <table>
                         <thead>
@@ -87,7 +88,7 @@
          
          <div class="btn-box">
              
-             <button class="btn btn-add" type="submit" :disabled="isDisable(title)" ><i class="fas fa-plus-circle"></i> Add Book</button>
+             <button class="btn btn-add" type="submit" :disabled="isDisable()" ><i class="fas fa-plus-circle"></i> Add Book</button>
             
         </div>
 
@@ -97,11 +98,11 @@
          
        
     
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     
-    <script src="main.js"></script>
+    <script src="script.js"></script>
 
     <script src="https://kit.fontawesome.com/93e278cd22.js" crossorigin="anonymous"></script>
     

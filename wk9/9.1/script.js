@@ -59,6 +59,11 @@ var myVue = new Vue({
       }, 
     ]
   },
+  computed: {
+    numBooks: function () {
+      return this.books.length
+    }
+  },
   methods: { 
     submitHandler: () => {
       console.log('submitted');
@@ -76,13 +81,13 @@ var myVue = new Vue({
         image: ""
       };
     },
-    deleteItem: item => {
-      myVue.books = myVue.books.filter(book => {
+    deleteItem (item) {
+      this.books = this.books.filter(book => {
         return book !== item;
       });
     },
-    isDisable (title) {
-      return title.length > 0;
+    isDisable () {
+      return this.newBookObj.title.length < 1;
     }
   }
 });

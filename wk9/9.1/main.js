@@ -59,6 +59,14 @@ var myVue = new Vue({
       }, 
     ]
   },
+  
+  // // computed: {
+  // //   numBooks: function () {
+  // //     myVue.books = myVue.books.concat(myVue.newBookObj);
+  // //     return this.books.length;
+      
+  // //   }
+  // },
   methods: { 
     submitHandler: () => {
       console.log('submitted');
