@@ -1,0 +1,96 @@
+/***
+* Main CSS for Exercise 10.2
+* Developed By: Tyler Mann
+***/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+body {
+    margin: auto;
+    max-width: 1200px;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.65;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    background-color: #1b1e22;
+}
+
+.track-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.track {
+  width: 200px;
+  border: 6px solid #45505c;
+  border-radius: 6px;
+  
+  background: rgb(108, 110, 133);
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px 5px;
+
+}
+.track.no-change {
+  border-color: #45505c;
+}
+.track.up {
+  border-color: #76dbba;
+}
+.track.down {
+  border-color: #db7976;
+}
+.rank {
+  background-color: #45505c;
+  color: #dadadb;;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 300;
+  margin: 0px 0px 10px 0px;
+  padding: 2px 10px;
+}
+.track h3 {
+  margin: 0;
+  font-size: 15px;
+  padding: 5px;
+  line-height: 15px;
+}
+.track small {
+  margin: 0;
+  line-height: 15px;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.track img {
+  width: 100%;
+  max-width: 53px;
+  margin: 5px;
+}
+
+h1 {
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 35px;
+    text-align: center;
+    color: #dadadb;
+    text-transform: uppercase;
+}
+
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Script Libs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+   
+    
+    <title>Billboard Top Streaming Tracks</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    
+    
+
+</head>
+<body>
+    
+         <h1>Billboard Top Streaming Tracks</h1>
+         <div id="app" class="track-wrapper">
+            <streaming-track :track="song" v-for="song in tracks"></streaming-track>
+         </div>
+        
+    <!-- Script Local -->
+    <script src="script.js"></script>
+     
+
+</body>
+</html>
