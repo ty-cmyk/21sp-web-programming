@@ -21,16 +21,22 @@
 <body>
     
          <h1>RESTing & Fetching</h1>
-         <div id="app">
-            <form v-on:submit="searchArt">
+         <h2>Star Wars Edition</h2>
+         
+            <!-- <form v-on:submit="searchWars">
                 <div>
-                    <label>Art</label>
-                    <input v-model="searchArt">
+                    <label>Color</label>
+                    <input v-model="searchWars">
                 </div>
                 <button type="submit">Submit</button>
 
-            </form>
-         </div>
+            </form> -->
+            <div id="app" class="film-wrapper">
+            <film :movie="movie" v-for="movie in films">
+
+            </film>
+            </div>
+         
         
     <!-- Script Local -->
     <script src="script.js"></script>
