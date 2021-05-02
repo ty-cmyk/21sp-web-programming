@@ -16,7 +16,6 @@ function setup() {
 function draw() {
     background(0);
     for (let i = 0; i < lines.length; i++) {
-        // lines[i].move();
         lines[i].show();
     }
 }
@@ -30,9 +29,9 @@ class Line {
     }
 
     show() {
-        stroke(255, 60);
+        stroke(255, 100, 20, 60);
         noFill ();
         strokeWeight(4);
-        line (this.x, this.y, this.w *2, this.h *2)
+        line (this.x, this.y, this.w *2, this.h *5)
     }
 }

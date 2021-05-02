@@ -5,7 +5,7 @@ function setup() {
     for (let i=0; i < 500; i++) {
         let x = random(width);
         let y = random(height);
-        let r = random(10, 40);
+        let r = random(10, 80);
         circles[i] = new Circle (x, y, r);
     }
 }
@@ -26,9 +26,8 @@ class Circle {
     }
 
     show() {
-        stroke(155, 60);
-        noFill ();
-        strokeWeight(4);
+        fill(155, 200, 50, 60);
+        noStroke ();
         ellipse(this.x, this.y, this.r *2)
     }
 }
