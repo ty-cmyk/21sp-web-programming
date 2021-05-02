@@ -1,0 +1,132 @@
+/***
+* Main CSS for Exercise 9.a
+* Developed By: Tyler Mann
+***/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+  [v-cloak] {
+    display: none;
+  }
+
+  body {
+    margin: auto;
+    max-width: 1000px;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.65;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    background-color: #1b1e22;
+}
+
+h1 {
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 35px;
+    text-align: center;
+    color: #dadadb;
+    text-transform: uppercase;
+}
+h2 {
+  text-align: center;
+  color: #a0821f;
+}
+
+.timeline-wrapper {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+.event {
+  max-width: 1000px;
+  border-radius: 6px;
+  background: #262b31;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px 10px;
+
+}
+
+.date {
+  background-color: #1b3046;
+  color: #dadadb;;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.75px;
+  font-weight: 400;
+  padding: 10px 15px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 30px;
+  padding: 20px 10px;
+  line-height: 32px;
+  color: #dadadb;
+}
+
+.place {
+  margin: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 5px 10px;
+  line-height: 15px;
+  font-weight: 500;
+  color: rgb(127, 208, 255);
+}
+
+.summary {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 5px 10px;
+  color: #dadadb;
+}
+
+  img {
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  .note {
+    padding-right: 30px;
+    font-style: italic;
+    font-size: 12px;
+    text-align: right;
+    color: #fff;
+  }
+  .numShown {
+    font-weight: 700;
+    font-size: 14px;
+    color: #7be6e6;
+  }
+
+/* Links */
+  a.link {
+    display: block;
+    padding-left: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    color: #a0531f;
+  }
+
+  a:hover {
+    color:#1f7272;
+  }
+
+  
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Script Libs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+    <title>CHRONOLOGY of Artist</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    
+    
+
+</head>
+<body>
+    
+         <h1>An Artist's CHRONOLOGY</h1>
+         <div id="chronology" v-cloak>
+            <div>
+                
+                <p class="note">Showing <span class="numShown">{{numEvents}}</span> items</p>
+                <div class="timeline-wrapper">
+                        
+                        <event :item="item" v-for="item in events"></event>
+                       
+                </div>
+                
+            </div>
+         </div>
+    
+    <!-- Scripts -->
+    <script src="lib/script.js"></script>
+
+    <script src="https://kit.fontawesome.com/93e278cd22.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
