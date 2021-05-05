@@ -7,8 +7,7 @@ function preload() {
 }
 
 function setup() {
-  let cnv = createCanvas(300, 300);
-  cnv.mousePressed(canvasPressed);
+  let cnv = createCanvas(800, 800);
   slider = createSlider (0, 1, 0.5, 0.01);
 }
 
@@ -18,7 +17,6 @@ function canvasPressed() {
 
 function draw () {
     background(100, 150, 20);
-    text('TAP HERE TO PLAY', 10, 20);
-    text('Set Volume', 120, 290);
+    ellipse ()
     mySound.setVolume(slider.value());
 }
