@@ -24,13 +24,13 @@
          <div id="chronology" v-cloak>
             <div>
                 
-                <p class="note">Showing <span class="numShown">{{numEvents}}</span> items</p>
+                
                 <div class="timeline-wrapper">
                         
                         <event :item="item" v-for="item in events"></event>
                        
                 </div>
-                
+                <p class="note">Showing <span class="numShown">{{numEvents}}</span> items</p>
             </div>
          </div>
     
