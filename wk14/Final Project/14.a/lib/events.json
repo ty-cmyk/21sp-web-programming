@@ -1,41 +1,49 @@
 [
     {
+        "id": 1,
         "year": 1987,
         "title": "Born August 31st",
         "place": "Brattleboro, Vermont, USA",
         "summary": "Designated female at birth"
     },
-    {
+    {   
+        "id": 2,
         "year":1987,
         "title":"LGBT Rights",
+        "link": "https://en.wikipedia.org/wiki/LGBT_rights_in_Sweden",
         "place":"Sweden",
         "summary":"Sweden is the first country to pass laws protecting homosexual rights"
     },
     {
+        "id": 3,
         "year":1991,
         "title":"Desert Storm",
+        "link": "https://en.wikipedia.org/wiki/Gulf_War",
         "place":"Iraq, Persian Gulf",
         "summary":"The Gulf War was a war waged by coalition forces from 35 nations led by the United States against Iraq in response to Iraq's invasion and annexation of Kuwait arising from oil pricing and production disputes."
     },
     {
+        "id": 4,
         "year":1992,
         "title":"Cray Pas",
         "place":"Chesterfield, New Hampshire",
         "summary":"Makes cray pa drawings on styrofoam"
     },
-    {
+    {   
+        "id": 5,
         "year":1994,
         "title":"1st Move",
         "place":"Chesterfield, New Hampshire",
         "summary":"Moved to ranch house 0.4 miles away"
     },
-    {
+    {   
+        "id": 6,
         "year":1995,
         "title":"1st Camera",
         "place":"Chesterfield, New Hampshire",
         "summary":"Collected pudding foil tops to mail-in for Alvin and The Chipmunk’s camera"
     },
-    {
+    {   "id": 7,
         "year":1995,
         "title":"1st Photographs",
         "place":"Chesterfield, New Hampshire",
@@ -50,6 +58,7 @@
     {
         "year":2000,
         "title":"Y2K",
+        "link": "https://en.wikipedia.org/wiki/Year_2000_problem",
         "place":"Earth",
         "summary":"The Year 2000 problem, also known as the Y2K problem, the Millennium bug, Y2K bug, the Y2K glitch, or Y2K, refers to events related to the formatting and storage of calendar data for dates in and after the year 2000"
     },
@@ -62,6 +71,7 @@
     {
         "year":2001,
         "title":"9/11 Attacks",
+        "link": "https://en.wikipedia.org/wiki/September_11_attacks",
         "place":"World Trade Center, New York, Manhattan, Stonycreek Township, Arlington County",
         "summary":"The September 11 attacks, often referred to as 9/11, were a series of four coordinated terrorist attacks by the Wahhabi terrorist group Al-Qaeda against the United States on the morning of Tuesday, September 11, 2001"
     },
@@ -74,18 +84,21 @@
     {
         "year":2003,
         "title":"Iraq War",
+        "link": "https://en.wikipedia.org/wiki/Iraq_War",
         "place":"Iraq",
         "summary":"The Iraq War was a protracted armed conflict that began in 2003 with the invasion of Iraq by a United States-led coalition that overthrew the government of Saddam Hussein. The conflict continued for much of the next decade as an insurgency emerged to oppose the occupying forces and the post-invasion Iraqi government."
     },
     {
         "year":2004,
         "title":"First all-transgender Vagina Monologues",
+        "link": "https://www.andreajames.com/stage/first-all-transgender-vagina-monologues-v-day-la-2004/",
         "place":"Los Angeles, California",
         "summary":"Deep Stealth Productions presented the V-Day 2004 Worldwide Campaign event for Los Angeles on Saturday, February 21st. In cooperation with the author, internationally-known playwright Eve Ensler, and under the auspices of Jane Fonda, this benefit performance featured the first ever transgender cast of “The Vagina Monologues,” and included a new monologue written by Eve especially for this event"
     },
     {
         "year":2004,
         "title":"Same-sex Marriage",
+        "link": "https://www.history.com/this-day-in-history/first-legal-same-sex-marriage-performed-in-massachusetts",
         "place":"Massachusetts, USA",
         "summary":"Same-sex marriage becomes legal in Massachusetts, USA"
     },
@@ -104,6 +117,7 @@
     {
         "year":2005,
         "title":"Same-sex Marriage",
+        "link": "https://www.thecanadianencyclopedia.ca/en/article/same-sex-marriage-in-canada#:~:text=In%202003%2C%20Ontario%20and%20British,sex%20marriage%20legal%20across%20Canada.",
         "place":"Canada",
         "summary":"Same-sex marriage becomes legal in Canada"
     },
@@ -122,6 +136,7 @@
     {
         "year":2007,
         "title":"Apple iPhone",
+        "link": "https://en.wikipedia.org/wiki/IPhone_(1st_generation)",
         "place":"Macworld 2007 convention at the Moscone Center in San Francisco",
         "summary":"Steve Jobs unveiled the iPhone to the public on January 9, 2007, at the Macworld 2007 convention at the Moscone Center in San Francisco."
     },
@@ -134,18 +149,21 @@
     {
         "year":2008,
         "title":"Barack Obama is Elected, America’s First Black President",
+        "link": "https://www.ebony.com/news/on-this-day-barack-obama-is-elected-americas-first-black-president/",
         "place":"USA",
         "summary":"Barack Obama, a Democrat from Illinois, was elected President of the United States on November 4, 2008 and was inaugurated as the nation's 44th president on January 20, 2009"
     },
     {
         "year":2009,
         "title":"The first International Transgender Day of Visibility is held",
+        "link": "https://en.wikipedia.org/wiki/International_Transgender_Day_of_Visibility",
         "place":"Michigan",
         "summary":"Founded by transgender activist Rachel Crandall of Michigan in 2009 as a reaction to the lack of LGBT recognition of transgender people, citing the frustration that the only well-known transgender-centered day was the Transgender Day of Remembrance, which mourned the murders of transgender people, but did not acknowledge and celebrate living members of the transgender community. The first International Transgender Day of Visibility was held on March 31, 2009."
     },
     {
         "year":2010,
         "title":"Don't Ask, Don't Tell Repeal Act of 2010",
+        "link": "https://en.wikipedia.org/wiki/Don%27t_Ask,_Don%27t_Tell_Repeal_Act_of_2010#:~:text=President%20Barack%20Obama%2C%20Defense%20Secretary,as%20of%20September%2020%2C%202011.",
         "place":"USA",
         "summary":"The Don't Ask, Don't Tell Repeal Act of 2010 (H.R. 2965, S. 4023) is a landmark United States federal statute enacted in December 2010 that established a process for ending the 'don't ask, don't tell' (DADT) policy (10 U.S.C. § 654), thus allowing gay, lesbian, and bisexual people to serve openly in the United States Armed Forces. It ended the policy in place since 1993 that allowed them to serve only if they kept their sexual orientation secret and the military did not learn of their sexual orientation, which was controversial.Don’t ask Don’t Tell is repealed"
     },
@@ -169,9 +187,10 @@
     },
     {
         "year":2011,
-        "title":"Name Change",
-        "place":"Keene, New Hampshire",
-        "summary":"Goes to  court to legally change name"
+        "title":"Obama invokes gay rights in inaugural address",
+        "link": "https://www.washingtonpost.com/politics/obama-invokes-gay-rights-in-inaugural-address/2013/01/21/78bbc410-6409-11e2-b84d-21c7b65985ee_story.html",
+        "place":"Washington D.C., USA",
+        "summary":"President Obama, became the first president to use the word “gay” as a reference to sexual orientation in an inaugural address, declaring the movement for equality to be part of the pantheon of America’s great civil rights struggles. 'Our journey is not complete until our gay brothers and sisters are treated like anyone else under the law,” the president said. “For if we are truly created equal, then surely the love we commit to one another must be equal, as well.'"
     }
 
 

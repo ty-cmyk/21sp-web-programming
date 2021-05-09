@@ -23,12 +23,20 @@
          <h1>An Artist's CHRONOLOGY</h1>
          <div id="chronology" v-cloak>
             <div>
-                
+                <div class="chevron-right"><i class="fas fa-chevron-right"></i></div>
                 
                 <div class="timeline-wrapper">
                         
-                        <event :item="item" v-for="item in events"></event>
-                       
+                    <event  
+                        v-for="(item, index) in events" 
+                        :item="item"
+                        :index="index"
+                        :key="item.id"
+                        v-on:remove="events.splice(index, 1)"
+                        >
+
+                    </event>
+                    
                 </div>
                 <p class="note">Showing <span class="numShown">{{numEvents}}</span> items</p>
             </div>
