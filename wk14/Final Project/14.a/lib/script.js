@@ -1,3 +1,4 @@
+// component
 Vue.component('event', {
   template: `
           <div class="event">
@@ -14,18 +15,20 @@ Vue.component('event', {
   props: ['item'],
 
 })
-
+// vue array to hold data
 var vm = new Vue({
   el: "#chronology",
   data: {
 
     events: []
   },
+// number of events returned
   computed: {
     numEvents: function () {
       return this.events.length
     }
   },
+// get library- then load library into vue array
   mounted () {
     axios
         .get('./lib/events.json')
