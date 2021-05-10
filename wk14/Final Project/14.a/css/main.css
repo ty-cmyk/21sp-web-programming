@@ -25,40 +25,53 @@
     background-color: #dadadb;
 }
 
-h1 {
-    margin: -70px 0 0 0;
+header {
+    margin: -90px 0 0 -90px;
+    border: solid 3px #1b1e22;
+    background-color: #f3f3f3;
+    position: fixed;
+    padding: 10px 200px 10px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
     font-weight: 700;
     letter-spacing: 3px;
     font-size: 35px;
-    text-align: center;
-    color: #1bb890;
     text-transform: uppercase;
-    position: fixed;
+    color: #1bb890;
+    margin: 0;
+    padding: 0;
 }
 h2 {
+  margin: 0;
+  padding: 0 0 0 20px;
+  font-size: 20px;
+  font-weight: 500;
   text-align: center;
-  color: #a0821f;
+  color: #1b1e22;
 }
-
+/* .container {
+  display: flex;
+  flex-direction: row;
+} */
 .timeline-wrapper {
   margin: 100px 300px 20px 20px;
   display: grid;
-  grid-template-columns: repeat(200, 350px);
-  grid-template-rows: 800px;
-  grid-column-gap: 40px;
+  grid-template-columns: repeat(100, minmax(400px, 3fr));
+  grid-column-gap: 2rem;
+  
   
 }
 .event {
   justify-content: space-between;
-  width: 350px;
   border: solid 3px #1b1e22;
-  /* border-radius: 6px; */
-  /* background: #1f242b; */
   background-color: #f3f3f3;
   padding: 20px 20px;
   display: flex;
   flex-direction: column;
-  margin: 10px 30px;
+  padding-bottom: 30px;
 
 }
 
@@ -83,7 +96,7 @@ h3 {
 
 .place {
   margin: 0;
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
   font-weight: 600;
   padding: 5px 10px;
@@ -94,9 +107,9 @@ h3 {
 }
 
 .summary {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
-  padding: 5px 10px;
+  padding: 5px 10px 20px;
   color: #1b1e22;
 }
 
@@ -139,7 +152,7 @@ h3 {
     font-size: 30px;
     line-height: 35px;
     color: #2d3f3a;
-    border-bottom: solid 2px #2d3f3a;
+    border-bottom: solid 2px #17DAA9;
   }
 
   a:hover {
