@@ -21,7 +21,8 @@
     font-size: 16px;
     font-weight: 400;
     text-align: left;
-    background-color: #1b1e22;
+    /* background-color: #1b1e22; */
+    background-color: #dadadb;
 }
 
 h1 {
@@ -30,7 +31,7 @@ h1 {
     letter-spacing: 3px;
     font-size: 35px;
     text-align: center;
-    color: #dadadb;
+    color: #1bb890;
     text-transform: uppercase;
     position: fixed;
 }
@@ -50,8 +51,10 @@ h2 {
 .event {
   justify-content: space-between;
   width: 350px;
-  border-radius: 6px;
-  background: #1f242b;
+  border: solid 3px #1b1e22;
+  /* border-radius: 6px; */
+  /* background: #1f242b; */
+  background-color: #f3f3f3;
   padding: 20px 20px;
   display: flex;
   flex-direction: column;
@@ -61,8 +64,8 @@ h2 {
 
 /* Event Details */
 .date {
-  background-color: #1b304657;
-  color: #dadadb;;
+  background-color: #1b1e22;
+  color: #dadadb;
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 1.75px;
@@ -75,7 +78,7 @@ h3 {
   font-size: 30px;
   padding: 20px 10px;
   line-height: 35px;
-  color: #dadadb;
+  color: #2d3f3a;
 }
 
 .place {
@@ -86,14 +89,15 @@ h3 {
   padding: 5px 10px;
   line-height: 15px;
   font-weight: 500;
-  color: rgb(127, 208, 255);
+  color: #17DAA9;
+  
 }
 
 .summary {
   font-size: 15px;
   font-weight: 500;
   padding: 5px 10px;
-  color: #dadadb;
+  color: #1b1e22;
 }
 
 /* images */
@@ -108,14 +112,14 @@ h3 {
     padding-right: 100px;
     font-style: italic;
     font-size: 12px;
-    color: #fff;
+    color: #1b3046;
     position: fixed;
   }
 
   .numShown {
     font-weight: 700;
     font-size: 14px;
-    color: #7be6e6;
+    color: #1bb890;;
   }
 
 /* Right Arrow */
@@ -134,11 +138,13 @@ h3 {
     text-decoration: none;
     font-size: 30px;
     line-height: 35px;
-    color: #9db9b9;
+    color: #2d3f3a;
+    border-bottom: solid 2px #2d3f3a;
   }
 
   a:hover {
-    color:#1f7272;
+    color:#1bb890;
+    border-bottom: solid 2px #1bb890;
   }
 
   /* Button Styles */
@@ -153,8 +159,8 @@ h3 {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    border: solid 2px #bb5252;
-    background-color: #bb5252;
+    border: solid 2px #000;
+    background-color: #000;
     color: #dadadb;
     text-transform: uppercase;
     font-size: 15px;
@@ -165,14 +171,17 @@ h3 {
   .btn:hover {
     color: #dadadb;
     background-color: #bb5252;
+    border: solid 2px #bb5252;
   }
   
   .btn-delete {
       padding: 12px 20px;
       font-size: 13px;
-      border: solid 2px #bb5252;
-      background-color: #1f242b;;
-      color: #dadadb;
+      border: solid 2px #1b1e22;;
+      /* background-color: #1f242b; */
+      background-color: #f3f3f3;
+      /* color: #dadadb; */
+      color: #1b1e22;;
   }
 
   .fa-minus-circle {
