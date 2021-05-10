@@ -59,6 +59,7 @@ h2 {
 
 }
 
+/* Event Details */
 .date {
   background-color: #1b304657;
   color: #dadadb;;
@@ -73,7 +74,7 @@ h3 {
   margin: 0;
   font-size: 30px;
   padding: 20px 10px;
-  line-height: 32px;
+  line-height: 35px;
   color: #dadadb;
 }
 
@@ -95,20 +96,22 @@ h3 {
   color: #dadadb;
 }
 
+/* images */
   img {
     max-width: 400px;
     max-height: 400px;
   }
 
+/* Showing # items */
   .note {
     margin: 0 0 0 50px;
     padding-right: 100px;
     font-style: italic;
     font-size: 12px;
-    /* text-align: right; */
     color: #fff;
     position: fixed;
   }
+
   .numShown {
     font-weight: 700;
     font-size: 14px;
@@ -129,10 +132,9 @@ h3 {
 /* Links */
   a.link {
     text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    color: #a0531f;
+    font-size: 30px;
+    line-height: 35px;
+    color: #9db9b9;
   }
 
   a:hover {
@@ -141,28 +143,39 @@ h3 {
 
   /* Button Styles */
   .actions {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .btn {
-    border-radius: 10px;
-    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: solid 2px #bb5252;
+    background-color: #bb5252;
     color: #dadadb;
-    background-color: #b1632f;
     text-transform: uppercase;
     font-size: 15px;
     letter-spacing: 1.5px;
     font-weight: 600;
   }
+
+  .btn:hover {
+    color: #dadadb;
+    background-color: #bb5252;
+  }
   
   .btn-delete {
-      padding: 10px 15px;
+      padding: 12px 20px;
       font-size: 13px;
-      background-color: #3d2222;
+      border: solid 2px #bb5252;
+      background-color: #1f242b;;
       color: #dadadb;
   }
 
   .fa-minus-circle {
-      font-size: 10px;
+      font-size: 15px;
   }
 
