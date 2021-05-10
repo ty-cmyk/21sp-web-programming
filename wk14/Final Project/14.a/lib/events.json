@@ -1,13 +1,11 @@
 [
     {
-        "id": 1,
         "year": 1987,
         "title": "Born August 31st",
         "place": "Brattleboro, Vermont, USA",
         "summary": "Designated female at birth"
     },
     {   
-        "id": 2,
         "year":1987,
         "title":"LGBT Rights",
         "link": "https://en.wikipedia.org/wiki/LGBT_rights_in_Sweden",
@@ -15,7 +13,6 @@
         "summary":"Sweden is the first country to pass laws protecting homosexual rights"
     },
     {
-        "id": 3,
         "year":1991,
         "title":"Desert Storm",
         "link": "https://en.wikipedia.org/wiki/Gulf_War",
@@ -23,27 +20,24 @@
         "summary":"The Gulf War was a war waged by coalition forces from 35 nations led by the United States against Iraq in response to Iraq's invasion and annexation of Kuwait arising from oil pricing and production disputes."
     },
     {
-        "id": 4,
         "year":1992,
         "title":"Cray Pas",
         "place":"Chesterfield, New Hampshire",
         "summary":"Makes cray pa drawings on styrofoam"
     },
     {   
-        "id": 5,
         "year":1994,
         "title":"1st Move",
         "place":"Chesterfield, New Hampshire",
         "summary":"Moved to ranch house 0.4 miles away"
     },
     {   
-        "id": 6,
         "year":1995,
         "title":"1st Camera",
         "place":"Chesterfield, New Hampshire",
         "summary":"Collected pudding foil tops to mail-in for Alvin and The Chipmunk’s camera"
     },
-    {   "id": 7,
+    { 
         "year":1995,
         "title":"1st Photographs",
         "place":"Chesterfield, New Hampshire",
@@ -336,7 +330,111 @@
         "title":"A Few Weeks, Maybe Months... | MFA Thesis Exhibition",
         "place":"Welch School Galleries, Georgia State University, Atlanta, Georgia",
         "summary":"March 20 - March 24, 2017. A few weeks, maybe months… is an exhibition of photographs that contemplates the societal expectations of the gender binary in the context of travel. The work considers the intersection of manhood with transgender identity and examines definitions of masculinity and gender. The American road trip is historically a masculine rite of passage which, in this case, will never fully be realized. Discrepancies in imagery throughout the work interrupt the conventional narrative structure of the road trip. Acknowledging that the acquisition of masculinity is a futile act, the journey then becomes a complex act of reconciliation."
+    },
+    {
+        "year":2017,
+        "title":"Bearing Witness",
+        "place":"Gallery 303, Georgia Southern University, Statesboro, Georgia",
+        "summary":"April 5 - May 5, 2017 - Group show curated by Kirstie Tepper."
+    },
+    {
+        "year":2017,
+        "title":"Digital Divide",
+        "place":"Midtown Player's Club at Colony Square, Atlanta, Georgia",
+        "summary":"May 20 - June 2, 2017- Group show curated by Kris Pilcher and Miranda Kyle."
+    },
+    {
+        "year":2017,
+        "title":"Trifecta",
+        "place":"Welch School Galleries, Georgia State University, Atlanta, Georgia",
+        "summary":"May 12 - September 22, 2017 - Juried by Ridley Howard, exhibition featuring selected MFA candidates from three Georgia universities."
+    },
+    {
+        "year":2017,
+        "title":"Begins Teaching",
+        "place":"Demorest & Atlanta, Georgia",
+        "summary":"Begins part time teaching positions at Oglethorpe University and Piedmont College."
+    },
+    {
+        "year":2017,
+        "title":"Trifecta",
+        "place":"Atlanta Photography Group, Tula Art Center, Atlanta, Georgia",
+        "summary":"October 7 - November 12, 2017- Juried by Gregory Harris (Assistant Curator of Photography for the High Museum of Art in Atlanta)"
+    },
+    
+    {
+        "year":2018,
+        "title":"Federal courts rule in favor of transgender students in two cases.",
+        "link": "https://www.aclu.org/cases/grimm-v-gloucester-county-school-board",
+        "place":"Florida, Pennsylvania USA",
+        "summary":"July 2018 - In Florida, a U.S. District Court ruled that, by denying Drew Adams access to the boys’ room, a local school board had violated his right to equal protection of the law under the Constitution’s Fourteenth Amendment, as well as violating Title IX. The U.S. Court of Appeals upheld a Pennsylvania school district’s decision to implement a trans-inclusive restroom policy in the Doe v. Boyertown case."
+    },
+    {
+        "year":2018,
+        "title":"First full-time teaching position",
+        "place":"Demorest, Georgia",
+        "summary":"Begins full-time teaching position at Piedmont College as a Visting Professor of Art."
+    },
+    {
+        "year":2018,
+        "title":"Owl Artists Fly Home | Alumni Art Exhibition",
+        "place":"Centennial Hall, Barry Alumni House, Keene State College, Keene, New Hampshire",
+        "summary":"Saturday, September 15, 2018"
+    },
+    {
+        "year":2019,
+        "title":"Assistant Professor",
+        "place":"Demorest, Georgia",
+        "summary":"After another year of interviews receives Assitant Professor title and full-time teaching position at Piedmont College."
+    },
+    {
+        "year":2019,
+        "title":"Minneapolis College of Art & Design",
+        "place":"Demorest, Georgia",
+        "summary":"As a condition of employment begins taking courses towards Masters in Graphic and Web Design."
+    },
+    {
+        "year":2020,
+        "title":"Doctors scramble to identify mysterious illness emerging in China",
+        "link": "https://www.newscientist.com/article/2229196-doctors-scramble-to-identify-mysterious-illness-emerging-in-china/",
+        "place":"USA",
+        "summary":"January 7, 2020 - At least 59 people in China have become ill with a mysterious pneumonia – seven of whom are in a serious condition, according to a local health commission. Chinese authorities still don’t know what has caused the outbreak, but have ruled out SARS, MERS and bird flu."
+    },
+    {
+        "year":2020,
+        "title":"The WHO is now calling the coronavirus outbreak a pandemic",
+        "link": "https://www.newscientist.com/article/2237190-the-who-is-now-calling-the-coronavirus-outbreak-a-pandemic/",
+        "place":"USA",
+        "summary":"March 11, 2020 - The World Health Organization today said the covid-19 outbreak caused by coronavirus is now  classed as a pandemic."
+    },
+    {
+        "year":2020,
+        "title":"Trump declares national emergency over coronavirus",
+        "link": "https://www.cnbc.com/2020/03/13/trump-will-hold-a-press-conference-at-3-pm-et-to-discuss-coronavirus-response.html",
+        "place":"USA",
+        "summary":"March 13, 2020 - The emergency declaration will free up as much as $50 billion in financial resources to efforts by states and U.S. territories to assist Americans affected by the outbreak."
+    },
+    {
+        "year":2020,
+        "title":"Supreme Court Finds Title VII Protects LGBTQ Individuals From Workplace Discrimination",
+        "link": "https://www.fisherphillips.com/news-insights/no-contest-supreme-court-finds-title-vii-protects-lgbtq-individuals-from-workplace-discrimination.html",
+        "place":"USA",
+        "summary":"June 15, 2020. - The U.S. Supreme Court ruled that workplace discrimination because of an individual’s sexual orientation or gender identity — including being transgender — is unlawful discrimination “because of sex” under Title VII of the Civil Rights Act of 1964."
+    },
+    {
+        "year":2020,
+        "title":"Transgender student Gavin Grimm's battle over bathroom access",
+        "link": "https://www.aclu.org/cases/grimm-v-gloucester-county-school-board",
+        "place":"Virginia, USA",
+        "summary":"August 26, 2020. - After a five-Year legal journey, a federal judge finds in favor of Gavin Grimm, a transgender student in Virginia who sued the school board in June 2015, for prohibiting him from using the boys’ restrooms. Gavin asserted that the school board’s insistence on his using bathrooms corresponding to his biological sex constituted sex discrimination and a violation of the law. The U.S. Court of Appeals for the Fourth Circuit affirmed the ruling in favor of Gavin on August 26, 2020."
+    },
+    {
+        "year":2021,
+        "title":"COVID vaccine",
+        "place":"Demorest, Georgia, USA",
+        "summary":"March 2021 - Receives first round of COVID vaccine."
     }
+
 
     
 ]
