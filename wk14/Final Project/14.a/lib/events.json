@@ -186,14 +186,7 @@
         "summary":"Group Show, selections by Prof. Lynn Richardson, Carroll House Gallery"
     },
     {
-        "year":2011,
-        "title":"Obama invokes gay rights in inaugural address",
-        "link": "https://www.washingtonpost.com/politics/obama-invokes-gay-rights-in-inaugural-address/2013/01/21/78bbc410-6409-11e2-b84d-21c7b65985ee_story.html",
-        "place":"Washington D.C., USA",
-        "summary":"President Obama, became the first president to use the word “gay” as a reference to sexual orientation in an inaugural address, declaring the movement for equality to be part of the pantheon of America’s great civil rights struggles. 'Our journey is not complete until our gay brothers and sisters are treated like anyone else under the law,” the president said. “For if we are truly created equal, then surely the love we commit to one another must be equal, as well.'"
-    },
-    {
-        "year":2011,
+        "year":2013,
         "title":"Obama invokes gay rights in inaugural address",
         "link": "https://www.washingtonpost.com/politics/obama-invokes-gay-rights-in-inaugural-address/2013/01/21/78bbc410-6409-11e2-b84d-21c7b65985ee_story.html",
         "place":"Washington D.C., USA",
@@ -201,12 +194,100 @@
     },
     {
         "year":2013,
-        "title":"Obama invokes gay rights in inaugural address",
-        "link": "https://www.washingtonpost.com/politics/obama-invokes-gay-rights-in-inaugural-address/2013/01/21/78bbc410-6409-11e2-b84d-21c7b65985ee_story.html",
-        "place":"Washington D.C., USA",
-        "summary":"President Obama, became the first president to use the word “gay” as a reference to sexual orientation in an inaugural address, declaring the movement for equality to be part of the pantheon of America’s great civil rights struggles. 'Our journey is not complete until our gay brothers and sisters are treated like anyone else under the law,” the president said. “For if we are truly created equal, then surely the love we commit to one another must be equal, as well.'"
+        "title":"Surgery 1",
+        "place":"Keene, New Hampshire",
+        "summary":"Tonsillectomy"
+    },
+    {
+        "year":2013,
+        "title":"Surgery 2",
+        "place":"Dartmouth, New Hampshire ",
+        "summary":"Chest reconstruction surgery (top surgery), freedom and affirmation."
+    },
+    {
+        "year":2013,
+        "title":"Gender Signifier",
+        "place":"Brattleboro, Vermont / Keene, New Hampshire  ",
+        "summary":"Legally changes gender signifier to male on all records. "
+    },
+    {
+        "year":2014,
+        "title":"Surgery 3",
+        "place":"Dartmouth, New Hampshire",
+        "summary":"Top surgery revision, insufficient funds for anesthesia - surgery completed with local anesthetic, most painful experience to date."
+    },
+    {
+        "year":2014,
+        "title":"Grad School",
+        "place":"Marlborough, New Hampshire",
+        "summary":"Accepted into MFA program at Georgia State University 'GSU'"
+    },
+    {
+        "year":2014,
+        "title":"Atlanta",
+        "place":"New Hampshire => Atlanta, Georgia",
+        "summary":"Packs up Subaru and moves to Atlanta"
+    },
+    {
+        "year":2014,
+        "title":"GSU",
+        "place":"Atlanta, Georgia ",
+        "summary":"Begins graduate studies at GSU"
+    },
+    {
+        "year":2014,
+        "title":"APG/MINT/ACP Collaboration",
+        "place":"Atlanta Photography Group, Atlanta, Georgia",
+        "summary":"October 10, 2014, group show curated by MINT Gallery."
+    },
+    {
+        "year":2015,
+        "title":"Interpolation",
+        "place":"Welch School Galleries, Georgia State University, Atlanta, Georgia",
+        "summary":"March 2 - March 20, 2015, group show by the Ernest G. Welch School of Art & Design | Selections by Krista Clark, Meta Gary and Tori Tinsley. Showcasing the 1st and 2nd year MFA graduates"
+    },
+    {
+        "year":2016,
+        "title":"37th Annual Juried Art Exhibition",
+        "place":"Monmouth Museum, Lincroft, New Jersey",
+        "summary":"January 16 - March 13, 2016, Juried by Monmouth Museum"
+    },
+    {
+        "year":2016,
+        "title":"American Road Trip",
+        "place":"Site: Brooklyn, Brooklyn, New York",
+        "summary":"January 20 - February 19, 2016, Juried by Site: Brooklyn"
+    },
+    {
+        "year":2016,
+        "title":"Deans' List",
+        "place":"Thomas Deans Fine Art, Atlanta, Georgia",
+        "summary":"July 22 - July 30, 2016 'Faculty Selections of MFA Student Works from Florida State University and Georgia State University: featuring some of the best young artists in the South.'"
+    },
+    {
+        "year":2016,
+        "title":"Deans' List",
+        "place":"Cage Space, Atlanta, Georgia",
+        "summary":"November 3 - November 17, 2016, Juried by the Art Student Union at Georgia State University"
+    },
+    {
+        "year":2016,
+        "title":"Identity Crisis",
+        "place":"Eyedrum Gallery, Atlanta, Georgia",
+        "summary":"December 2 - December 3, 2016, Juried by Kirstin Mitchell"
+    },
+    {
+        "year":2016,
+        "title":"Aqua Art Miami",
+        "place":"Aqua, Miami Beach, Florida",
+        "summary":"November 30 - December 4, 2016, Group show, hosted by the Aqua Hotel in conjunction with Art Basel in Miami"
+    },
+    {
+        "year":2017,
+        "title":"A Few Weeks, Maybe Months... | MFA Thesis Exhibition",
+        "place":"Aqua, Miami Beach, Florida",
+        "summary":"November 30 - December 4, 2016, Group show, hosted by the Aqua Hotel in conjunction with Art Basel in Miami"
     }
-
 
     
 ]
