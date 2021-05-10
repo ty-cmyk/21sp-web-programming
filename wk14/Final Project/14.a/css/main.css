@@ -1,5 +1,5 @@
 /***
-* Main CSS for Exercise 9.a
+* Main CSS for Exercise 14.a Final Project
 * Developed By: Tyler Mann
 ***/
 
@@ -24,100 +24,107 @@
     /* background-color: #1b1e22; */
     background-color: #dadadb;
 }
-
-header {
-    margin: -90px 0 0 -90px;
-    border: solid 3px #1b1e22;
-    background-color: #f3f3f3;
-    position: fixed;
-    padding: 10px 200px 10px 100px;
+/* HEADER */
+  header {
+      margin: -120px 0 0 -90px;
+      border: solid 3px #1b1e22;
+      background-color: #f3f3f3;
+      position: fixed;
+      padding: 10px 200px 10px 100px;
+      display: flexbox;
+      justify-content: center;
+      align-items: center;
+  }
+  .h-wrap {
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-h1{
-    font-weight: 700;
-    letter-spacing: 3px;
-    font-size: 35px;
-    text-transform: uppercase;
-    color: #1bb890;
+      align-items: center;
+  }
+  h1{
+      font-weight: 700;
+      letter-spacing: 3px;
+      font-size: 35px;
+      text-transform: uppercase;
+      color: #1bb890;
+      margin: 0;
+      padding: 0;
+  }
+  h2 {
+    margin: 0;
+    padding: 0 0 0 20px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: #1b1e22;
+  }
+  .description {
     margin: 0;
     padding: 0;
-}
-h2 {
-  margin: 0;
-  padding: 0 0 0 20px;
-  font-size: 20px;
-  font-weight: 500;
-  text-align: center;
-  color: #1b1e22;
-}
-/* .container {
-  display: flex;
-  flex-direction: row;
-} */
-.timeline-wrapper {
-  margin: 100px 300px 20px 20px;
-  display: grid;
-  grid-template-columns: repeat(100, minmax(400px, 3fr));
-  grid-column-gap: 2rem;
-  
-  
-}
-.event {
-  justify-content: space-between;
-  border: solid 3px #1b1e22;
-  background-color: #f3f3f3;
-  padding: 20px 20px;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 30px;
-
-}
-
-/* Event Details */
-.date {
-  background-color: #1b1e22;
-  color: #dadadb;
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 1.75px;
-  font-weight: 400;
-  padding: 10px 15px;
-}
-
-h3 {
-  margin: 0;
-  font-size: 30px;
-  padding: 20px 10px;
-  line-height: 35px;
-  color: #2d3f3a;
-}
-
-.place {
-  margin: 0;
-  font-size: 13px;
-  text-transform: uppercase;
-  font-weight: 600;
-  padding: 5px 10px;
-  line-height: 15px;
-  font-weight: 500;
-  color: #17DAA9;
-  
-}
-
-.summary {
-  font-size: 16px;
-  font-weight: 500;
-  padding: 5px 10px 20px;
-  color: #1b1e22;
-}
-
-/* images */
-  img {
-    max-width: 400px;
-    max-height: 400px;
+    font-style: italic;
+    font-size: 12px;
+    color: #1b3046;
   }
+
+
+/* Timeline */
+  .timeline-wrapper {
+    margin: 130px 300px 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(70, minmax(500px, 1fr));
+    grid-column-gap: 2rem;
+    
+    
+  }
+  .event {
+    justify-content: space-between;
+    border: solid 3px #1b1e22;
+    background-color: #f3f3f3;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+
+  }
+
+  /* Event Details */
+  .date {
+    background-color: #1b1e22;
+    color: #dadadb;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1.75px;
+    font-weight: 400;
+    padding: 10px 15px;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 30px;
+    padding: 20px 10px;
+    line-height: 35px;
+    color: #2d3f3a;
+  }
+
+  .place {
+    margin: 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 5px 10px;
+    line-height: 15px;
+    font-weight: 500;
+    color: #17DAA9;
+    
+  }
+
+  .summary {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px 20px;
+    color: #1b1e22;
+  }
+
+
 
 /* Showing # items */
   .note {
@@ -128,6 +135,7 @@ h3 {
     color: #1b3046;
     position: fixed;
   }
+
 
   .numShown {
     font-weight: 700;
